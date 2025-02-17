@@ -15,15 +15,33 @@
 
     <div class="kayit-formu">
         <form action="">
-            <label for="ad">Ad</label>
-            <input type="text" id="ad" name="ad" placeholder="Adinizi Giriniz">
+            <section class="form">
+                <label for="ad">Ad</label>
+                <input type="text" id="ad" name="ad"  placeholder="Adinizi Giriniz">
 
-            <label for="soyad">Soyad</label>
-            <input type="text" id="soyad" value="" placeholder="Soyadinizi Giriniz">
+                <label for="soyad">Soyad</label>
+                <input type="text" id="soyad" name="soyad" placeholder="Soyadinizi Giriniz">
 
-            <label for="cinsiyet">Cinsiyet</label>
-            <input type="radio" id="radio-erkek" value="Erkek">
-            <input type="radio" id="radio-kadin" value="Kadin">
+                <label>Cinsiyet</label>
+                <input type="radio" id="erkek" name="cinsiyet" value="Erkek">
+                <label for="erkek">Erkek</label>
+            
+                <input type="radio" id="kadin" name="cinsiyet" value="Kadin">
+                <label for="kadin">Kadin</label>
+
+                <label for="sifre">Sifrenizi Giriniz</label>
+                <input type="password" id="sifre" name="sifre" placeholder="Sifrenizi Giriniz">
+
+                <label for="date">Dogum Tarihi</label>
+                <input type="date" id="date" name="date" >
+            
+            </section>
+
+            
+            <section class="kait-ol">
+                <button type="submit">Kayit Ol</button>
+            </section>
+
         </form>
     </div>
 </body>
