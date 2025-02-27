@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //Bir sayı dizisi içindeki çift sayıları bulan ve bunları yeni bir diziye ekleyen bir fonksiyon yaz.
+
+
+        let number = [12, 45, 67, 3, 89, 23, 56, 78];
+
+        let ciftSayi = [];
+        
+        function ciftSayilar(number) {
+
+            for(let num of number){
+                if(num % 2 === 0){
+                    ciftSayi.push(num);
+                }
+                
+            }
+            console.log("cift sayilar: "+ciftSayi);
+            
+        }
+
+        ciftSayilar(number);
+    </script>
+</body>
+</html>

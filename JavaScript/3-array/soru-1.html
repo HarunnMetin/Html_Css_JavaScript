@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sayilar = [12, 45, 67, 3, 89, 23, 56, 78, 100, 21];
+
+      //Çift sayıları bul.
+
+      let ciftSayilar = [];
+
+      for (let number of sayilar) {
+        if (number % 2 === 0) {
+          ciftSayilar.push(number);
+        }
+      }
+      console.log("cift sayilar: " + ciftSayilar);
+
+      // Tek sayıları bul.
+
+      let tekSayilar = [];
+
+      for (let number of sayilar) {
+        if (number % 2 === 1) {
+          tekSayilar.push(number);
+        }
+      }
+      console.log("tek sayilar: " + tekSayilar);
+
+      // Çift ve tek sayıları ayrı ayrı dizilere ekle.
+
+      let cift = [];
+      let tek = [];
+
+      for (let number of sayilar) {
+        if (number % 2 === 0) {
+          cift.push(number);
+        } else {
+          tek.push(number);
+        }
+      }
+      console.log("tek sayilar: " + tek + " cift sayilar: " + cift);
+
+      // Çift sayılar dizisinin toplamını hesapla.
+
+      let ciftToplam = 0;
+      for (let number of sayilar) {
+        if (number % 2 === 0) {
+          ciftToplam += number;
+        }
+      }
+      console.log("cift sayi yoplam: " + ciftToplam);
+
+      // Tek sayılar dizisinin toplamını hesapla.
+
+      let tekToplam = 0;
+
+      for (let number of sayilar) {
+        if (number % 2 !== 0) {
+          tekToplam += number;
+        }
+      }
+      console.log("tek saayi toplam: " + tekToplam);
+
+      // Ekrana her iki diziyi ve toplamları yazdır.
+
+      let tekDizi = [];
+      let ciftDizi = [];
+      tekToplam = 0;
+      ciftToplam = 0;
+
+      for (let number of sayilar) {
+        if (number % 2 === 0) {
+          ciftDizi.push(number);
+          ciftToplam += number;
+        } else {
+          tekDizi.push(number);
+          tekToplam += number;
+        }
+      }
+      console.log("cift dizi: " + ciftDizi);
+      console.log("cift toplam: " + ciftToplam);
+      console.log("tek dizi: " + tekDizi);
+      console.log("tek toplam: " + tekToplam);
+    </script>
+  </body>
+</html>
