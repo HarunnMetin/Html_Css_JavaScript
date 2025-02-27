@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //   let sehirler = ["İstanbul", "Ankara", "İzmir", "Bursa", "Antalya"];
+
+    //   function findUnique(array) {
+    //     for (let arr of array) {
+    //       console.log(arr);
+    //     }
+    //   }
+    //   findUnique();
+
+      //dizideki en buyuk sayiyi bulma
+
+      let sayilar = [12, 45, 67, 3, 89, 23, 56];
+
+      function enBuyuk(sayilar) {
+
+        let enBuyuk = sayilar[0];
+
+        for (let num of sayilar) {
+
+        
+          if(num > enBuyuk){
+
+            enBuyuk = num;
+          }
+          
+        }
+        console.log(enBuyuk);
+      }
+
+      enBuyuk(sayilar);
+    </script>
+  </body>
+</html>
