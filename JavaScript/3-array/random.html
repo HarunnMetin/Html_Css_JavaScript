@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="page-title">Newer Ever Stay Alone</h1>
+
+    <button id="btn">Button</button>
+
+    <script>
+
+        // console.log(Math.random() * 1677783);
+        // console.log(Math.ceil(4.5));
+        
+        
+
+        let title = document.getElementById("page-title");
+        let btn = document.getElementById("btn");
+
+        title.style.color = "#5f3";
+
+        btn.addEventListener("click", () => {
+            
+            let rasgeleRenk = "#" + Math.floor(Math.random() * 1645).toString(16);
+            title.style.color = rasgeleRenk;
+
+            // console.log("#" + rasgeleRenk);
+            console.log(rasgeleRenk);
+            
+            
+            
+        })
+    </script>
+</body>
+</html>
