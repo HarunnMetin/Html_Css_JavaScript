@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>New World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro beatae
+      blanditiis cupiditate exercitationem. Accusamus, libero non consequatur
+      minima illo magnam fuga voluptatem! Fugiat quis placeat exercitationem
+      dolore nihil dicta laudantium.
+    </p>
+
+    <button class="button">Tikla</button>
+
+    <button class="btn1" >Tikla</button>
+
+    <script>
+      let btn = document.querySelector(".button");
+
+      function btnClick() {
+        setTimeout(() => {
+          console.log((document.title = "New World"));
+
+          document.body.style.backgroundColor = "#333";
+          console.log("Butuna Tiklandi");
+        }, 2000);
+      }
+      btn.addEventListener("click", btnClick);
+
+      let btn1 = document.querySelector(".btn1");
+
+      btn1.addEventListener("click" ,() => {
+
+        document.body.innerHTML = "Bu sayfa tamamen degisti";
+        document.body.style.backgroundColor = "green";
+        document.body.style.fontSize = "35px";
+
+      })
+    </script>
+  </body>
+</html>
