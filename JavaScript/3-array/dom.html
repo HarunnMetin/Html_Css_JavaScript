@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik+Vinyl&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Aşağıdaki HTML dosyasında JavaScript kullanarak document.title ile sayfanın başlığını "Yeni Başlık" olarak değiştir. -->
+
+    <div class="container">
+      <section class="sections">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia
+          dignissimos accusantium illo veniam, odio necessitatibus, accusamus
+          commodi dolores reiciendis blanditiis! Perferendis officiis rem
+          similique quam, totam doloremque aperiam in.
+        </p>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </section>
+    </div>
+
+    <body>
+      <script>
+        let newTitle = (document.title = "Yeni Baslik");
+        console.log(document.querySelector("title"));
+        document.body.style.backgroundColor = " #89A8B2";
+        // document.body.style.display = "none";
+        document.body.style.fontFamily = "Cormorant Garamond";
+
+        // Sayfa yüklendiğinde 5 saniye sonra (setTimeout kullanarak) arka plan rengini "yellow" yap.
+
+        setTimeout(() => {
+            document.body.style.backgroundColor = "yellow";
+            document.body.style.fontSize = "50px";
+            
+        }, 5000);
+      </script>
+    </body>
+  </body>
+</html>
