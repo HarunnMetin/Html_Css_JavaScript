@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+
+    <p id="p">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sequi fuga.
+    </p>
+    <button id="btn">Renk Degistir</button>
+
+    <script>
+
+        let p = document.getElementById("p");
+        let btn = document.getElementById("btn");
+
+        p.style.fontSize = "26px";
+
+        function renkDegistir(){
+
+            let rasgeleRenk = "#" + Math.floor(Math.random() * 16777215) ;
+
+            p.style.color = rasgeleRenk.toString(16);
+            
+        }
+
+        btn.addEventListener("click", () => {
+
+            renkDegistir();
+        });
+
+
+
+
+        
+
+    </script>
+  </body>
+</html>
