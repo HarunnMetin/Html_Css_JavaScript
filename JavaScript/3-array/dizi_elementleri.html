@@ -6,25 +6,44 @@
     <title>Document</title>
   </head>
   <body>
-
     <ul class="list-items">
-        <li class="item">Hi</li>
-        <li class="item">How</li>
-        <li class="item">Are</li>
-        <li class="item">You</li>
+      <li class="item">Hi</li>
+      <li class="item">How</li>
+      <li class="item">Are</li>
+      <li class="item">You</li>
     </ul>
 
-
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique qui
+      aliquam minus corrupti laborum maxime. Neque libero consectetur aliquid
+      dolor dolore, reiciendis ipsam architecto assumenda provident perferendis
+      labore vel cumque.
+    </p>
 
     <script>
+      let items = document.getElementsByClassName("list-items");
 
-        let items = document.getElementsByClassName("list-items");
+      for (let i = 0; i < items.length; i++) {
+        console.log(items[i].innerHTML);
+      }
 
-        for(let i = 0; i < items.length; i++){
+      let pharagraph = document.getElementsByTagName("p");
 
-            console.log(items[i].innerHTML);
-            
-        }
+      for(let p of pharagraph){
+
+        console.log(p.textContent);
+        
+      }
+
+
+      let items2 = document.querySelectorAll(".item").forEach(item => {
+        item.innerText = "guncellendi";
+      });
+      
+
+
+
+
     </script>
   </body>
 </html>
