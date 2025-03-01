@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="box">
+
+    </div>
+
+    <button class="btn">Renk Degistir</button>
+
+
+    <script>
+
+        let box = document.querySelector(".box");
+        let btn = document.querySelector(".btn");
+
+        box.style.height = "150px";
+        box.style.width = "150px";
+        box.style.border = "2px solid #333";
+        box.style.borderRadius = "10px 20px";
+
+        btn.style.marginTop = "20px";
+
+        
+
+        btn.addEventListener("click", () => {
+
+            setTimeout(() => {
+
+                let rasgeleRenk = "#" + Math.floor(Math.random()* 16777215).toString(16);
+
+                box.style.backgroundColor = rasgeleRenk;
+                
+            }, 1000);
+        })
+
+    </script>
+</body>
+</html>
