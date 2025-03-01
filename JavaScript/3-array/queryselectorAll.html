@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    li {
+      list-style: none;
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+      border: 1px solid #333;
+      text-align: center;
+    }
+
+    .active {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <ul id="list">
+      <li class="item">item 1</li>
+      <li class="item">item 2</li>
+      <li class="item">item 3</li>
+      <li class="item">item 4</li>
+    </ul>
+
+    <button class="btn">Rengi Yesil Yap</button>
+
+    <script>
+      let listItem = document.querySelectorAll("#list .item");
+
+      listItem.forEach((item) => {
+        item.addEventListener("click", () => {
+          item.classList.toggle("active");
+          item.style.color = "white";
+
+          if (item.classList.contains("active")) {
+            item.style.color = "white";
+          } else {
+            item.style.color = "black";
+          }
+        });
+      });
+    
+      let btn = document.querySelector(".btn");
+
+      btn.addEventListener("click", () => {
+        
+        listItem.forEach(item => {
+
+            item.style.backgroundColor = "green";
+        })
+      })
+    
+    </script>
+  </body>
+</html>
