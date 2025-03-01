@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let pharagraph = document.createElement("p");
+      pharagraph.innerText = "I was created pharagraph";
+      document.body.appendChild(pharagraph);
+
+      let lists = document.createElement("ul");
+      document.body.appendChild(lists);
+
+      let li1 = document.createElement("li");
+      li1.innerText = "item 1";
+      lists.appendChild(li1);
+
+      let li2 = document.createElement("li");
+      li2.innerText = "item 2";
+      lists.appendChild(li2);
+
+      let div = document.createElement("div");
+      div.innerText = "Why";
+      div.classList.add("Not");
+      document.body.appendChild(div);
+
+
+      
+    </script>
+  </body>
+</html>
