@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="textarea" placeholder="bir seyler yazin">
+    <p></p>
+    
+    <script>
+
+        let textarea = document.querySelector("#textarea");
+        let p = document.querySelector("p");
+
+        textarea.addEventListener("focus", () => {
+
+            p.textContent = "UYARI : lutfen bir seyler yaziniz";
+            
+        })
+    </script>
+
+
+</body>
+</html>
