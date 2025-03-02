@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>eeıwıoıow</p>
+    <button  id="click">Click</button>
+    <button id="remove">Remove</button>
+    
+
+    <script>
+
+        let p = document.querySelector("p");
+        let btnClick = document.getElementById("click");
+        let btnRemove = document.getElementById("remove");
+
+        btnClick.addEventListener("click", function() {
+            if(p.innerText === ""){
+                p.innerText = "Bu Bir Paragraftir";
+            }
+            else{
+
+                p.innerText = "Paragraf Guncellendi"
+            }
+
+            p.style.backgroundColor = "yellow";
+            p.style.color = "blue";
+        })
+
+    </script>
+</body>
+</html>
