@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" class="textarea" placeholder="lutfen bir seyler yaziniz">
+    <p class="output"></p>
+
+    <script>
+        let textarea = document.querySelector(".textarea");
+        let output = document.querySelector(".output");
+
+        textarea.addEventListener("blur", function(){
+            output.textContent = "Geri dönmek için buraya tiklayin!";
+        })
+
+
+    </script>
+</body>
+</html>
