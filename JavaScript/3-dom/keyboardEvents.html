@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="bir seyler yaz">
+
+    <p id="basilanTus"></p>
+    
+
+    <script>
+
+        let input = document.querySelector("#textInput");
+        let basilanTus = document.querySelector("#basilanTus");
+        
+
+
+        input.addEventListener("keydown", (event) => {
+
+            basilanTus.textContent = "basilan tus:" + event.key;
+            
+        })
+
+
+    </script>
+</body>
+</html>
