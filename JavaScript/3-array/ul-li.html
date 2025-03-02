@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul></ul>
+    <button id="click">Click</button>
+    <button id="remove">Remove</button>
+
+    <script>
+      let ul = document.querySelector("ul");
+      let btnClick = document.getElementById("click");
+      let btnRemove = document.getElementById("remove");
+
+      btnClick.addEventListener("click", function () {
+        let li = document.createElement("li");
+        li.innerText = "Yeni Bir Eleman Eklendi";
+        ul.appendChild(li);
+
+        li.style.backgroundColor = "red";
+        li.style.color = "white";
+      });
+
+      btnRemove.addEventListener("click", function () {
+        if (ul.lastElementChild) {
+          ul.removeChild(ul.lastChild);
+        }
+      });
+    </script>
+  </body>
+</html>
