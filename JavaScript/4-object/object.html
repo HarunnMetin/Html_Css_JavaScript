@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let student = {
+        name: "Deya",
+        surname: "Ates",
+        age: 24,
+      };
+      student.age = 30;
+
+      console.log(student.age);
+
+      let car = {
+        brand: "Mersedes",
+        model: "Benz",
+        year: 2025,
+        start: function () {
+          console.log("araba calistirildi");
+        },
+      };
+
+      car.start();
+
+      let book = {
+        ad: "Bilincaltinin Gucu",
+        yazar: "Joseph Murphy",
+        yil: 1990,
+      };
+
+      for (let key in book) {
+        console.log(key + ":" + book[key]);
+      }
+
+      let person = {
+        name: "John",
+        age: 45,
+        adress: {
+          country: "USA",
+          city: "Washington",
+          street: "Flower",
+        },
+      };
+
+       let newCity = person.adress.city = "New York";
+
+       console.log(newCity);
+       
+    </script>
+  </body>
+</html>
