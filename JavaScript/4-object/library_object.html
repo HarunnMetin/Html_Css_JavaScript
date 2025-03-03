@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let Kutuphane = {
+        name: "Antalya Kutuphanesi",
+        konum: "Antalya",
+        kitaplar: [
+            {ad: "Karamazov Kardesler", yazar: "Dostoyevski", yili: 1970},
+            {ad: "Atomik Aliskanliklar", yazar: "James Clear", yili: 2018},
+            {ad: "The Secret", yazar: "Rohanda Bryne", yili: 1999},
+        ],
+      };
+
+
+      let kitapAdi = Kutuphane.kitaplar.map(kitap => kitap.ad);
+
+      console.log(kitapAdi);
+
+      let filter2000 = Kutuphane.kitaplar.filter(kitaplar => kitaplar.yili > 2000);
+
+      console.log(filter2000);
+      
+      
+      
+    //   console.log(library.kitaplar[0]);
+      
+    </script>
+  </body>
+</html>
