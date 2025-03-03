@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let phone = {
+        brand: "Xiaomi",
+        model: "Not 12",
+        price: 20000,
+
+        changePrice: function (newPrice) {
+          this.price = newPrice;
+        },
+      };
+
+      phone.changePrice(30000);
+
+      console.log(phone.price);
+
+      let oyun = {
+        baslik: "Kosu",
+        turu: "Macera",
+        cikisYili: 2024,
+      };
+
+      for (let [key, value] of Object.entries(oyun)) {
+        console.log([key, value]);
+      }
+
+      let objectValues = Object.values(oyun);
+      console.log(objectValues);
+
+      let objectKey = Object.keys(oyun);
+      console.log(objectKey);
+
+      //   for(let key in oyun){
+      //     console.log(key, oyun[key]);
+
+      //   }
+    </script>
+  </body>
+</html>
