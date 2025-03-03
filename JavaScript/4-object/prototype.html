@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        
+        function Person(name,age){
+            this.name = name;
+            this.age = age;
+        }
+
+        Person.prototype.sayHello = function(){
+            return `Merhaba benim adim ${this.name} ve ${this.age} yasindayim`;
+        }
+
+        let person = new Person("John",45);
+        console.log(person.sayHello());
+        
+
+
+        function Car(brand,year){
+            this.brand = brand;
+            this.year = year;
+        }
+
+        Car.prototype.myCar = function(){
+            return`Benim arabam ${this.brand} ve ${this.year} tarihinde uretildi`;
+        }
+
+        let car1 = new Car("Corolla",2020);
+
+        console.log(car1.myCar());
+        
+        
+
+    </script>
+</body>
+</html>
