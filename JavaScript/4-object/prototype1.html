@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        function Kitap(kitapAdi,yazar,yayinTarihi){
+            this.kitapAdi = kitapAdi;
+            this.yazar = yazar;
+            this.yayinTarihi = yayinTarihi;
+        }
+
+        Kitap.prototype.detay = function(){
+
+            return `Bu kitabin yazari olan ${this.yazar} ${this.kitapAdi} kitabini ${this.yayinTarihi} tarihinde piyasaya sürdü`
+        }
+
+        const kitap1 = new Kitap("Sarsinti" , "Mustafa Gorguc", 2025);
+
+        let consol = kitap1.detay();
+        console.log(consol);
+        
+
+    </script>
+</body>
+</html>
