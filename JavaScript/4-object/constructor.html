@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Araba(model, yil, renk) {
+        this.model = model;
+        this.yil = yil;
+        this.renk = renk;
+
+        this.arabam = function(){
+
+            console.log(`Benim arabam ${this.model} ${this.yil} cikisli ve ${this.renk} renktedir`);
+            
+        }
+      }
+      let araba = new Araba("Mersedes Benz",2020,"Mavi");
+      let araba1 = new Araba("BMW",2025,"Turuncu");
+      console.log(araba1);
+      
+      console.log(araba);
+
+      araba.arabam();
+      araba1.arabam();
+
+
+      
+      
+      
+      
+      
+      
+    </script>
+  </body>
+</html>
