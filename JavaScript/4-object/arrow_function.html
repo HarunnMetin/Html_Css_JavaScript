@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function ikiKat(a) {
+        return a * 2;
+      }
+
+      console.log(ikiKat(2, 2));
+
+      //arrow functions
+
+      const ikiKatiniAl = (sayi) => sayi * 2;
+      console.log(ikiKatiniAl(5));
+
+      let kullanici = {
+        ad: "Hamza",
+        yas: 19,
+        bilgiver() {
+          setTimeout(() => {
+            console.log(
+              `merhaba ben ${this.ad} ve ben ${this.yas} yasindayim `
+            );
+          }, 2000);
+        },
+      };
+
+      kullanici.bilgiver();
+
+      const sayilar = [1, 4, 5, 7, 8, 9, 6, 5];
+      let ikiKati = sayilar.map((sayi) => sayi * 2);
+
+      console.log(ikiKati);
+      
+    </script>
+  </body>
+</html>
