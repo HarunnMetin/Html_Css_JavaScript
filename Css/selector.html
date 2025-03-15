@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    div > p {
+      color: red;
+    }
+    div + p {
+      color: green;
+    }
+    div ~ p {
+      color: rgb(93, 0, 255);
+      font-size: 20px;
+      font-style: italic;
+    }
+    div > p:first-child {
+      color: rgb(24, 122, 66);
+    }
+    div > p:last-child {
+      font-weight: bold;
+      color: grey;
+    }
+    div > p:nth-child(3) {
+      font-size: 40px;
+      text-align: right;
+      color: brown;
+      padding-right: 40px;
+    }
+    div > nav > *:nth-child(1) {
+      background-color: aqua;
+      font-weight: bolder;
+    }
+    div>nav>*:nth-child(2){
+        display: block;
+    }
+    div>ul>*:nth-child(3){
+        background: #333;
+        color: red;
+    }
+  </style>
+  <body>
+    <div>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+    <p>Lorem, ipsum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <div>
+      <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ul>
+      <nav>
+        <p>Lorem ipsum dolor sit.</p>
+        <a href="#">Y</a>
+        <a href="#">E</a>
+        <a href="#">S</a>
+      </nav>
+    </div>
+  </body>
+</html>
