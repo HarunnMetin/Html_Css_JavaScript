@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    table,
+    th,
+    td {
+      border: 2px inset rgb(255, 0, 98);
+
+      border-collapse: collapse;
+      width: 100%;
+    }
+    /* .countries th {
+      background-color: aquamarine;
+    }
+    .countries td {
+      background: grey;
+      color: white;
+    } */
+    .countries tr:nth-child(n + 2):nth-child(odd) {
+      background: orange;
+    }
+    .countries tr:nth-child(even):hover {
+      background-color: yellow;
+    }
+    .countries tr:nth-child(n + 2):nth-child(odd):hover {
+      background: green;
+    }
+  </style>
+  <body>
+    <table class="countries">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+    </table>
+  </body>
+</html>
