@@ -1,0 +1,1 @@
+//* document write ile cikti verme
