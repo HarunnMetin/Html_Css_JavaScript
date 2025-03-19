@@ -26,3 +26,9 @@ alert("hosgeldiniz");
 setTimeout(() => {
   alert("iki sayinin toplami:" + (a + b));
 }, 1000);
+
+console.log(window.location.port);
+
+
+
+
