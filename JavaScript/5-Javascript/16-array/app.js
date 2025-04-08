@@ -36,6 +36,25 @@ let tostringArr = arr.toString();
 console.log(tostringArr);
 
 
+let birlesim = cars.concat(arr);
+console.log(birlesim.toString());
+
+let tersi = arr.reverse().toString();
+
+console.log(tersi);
+
+let index = arr.indexOf("Sari");
+console.log(index);
+
+let includ = arr.includes("mavi");
+console.log(includ);
+
+
+
+
+
+
+
 
 
 
