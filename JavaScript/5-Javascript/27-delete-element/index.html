@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hoş Geldiniz!</h1>
+      <nav>
+        <ul>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#hizmetler">Hizmetler</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hakkimizda">
+      <h2>Hakkımızda</h2>
+      <p>Biz, yaratıcı çözümler sunan bir ekibiz!</p>
+      <img src="https://via.placeholder.com/150" alt="Örnek Resim" />
+    </section>
+
+    <section id="hizmetler">
+      <h2>Hizmetlerimiz</h2>
+      <ul>
+        <li>Web Tasarımı</li>
+        <li>
+          Mobil Uygulama Geliştirme
+          <ul>
+            <li>iOS</li>
+            <li>Android</li>
+          </ul>
+        </li>
+        <li>SEO Danışmanlığı</li>
+      </ul>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Hizmet</th>
+            <th>Başlangıç Fiyatı</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Tasarım</td>
+            <td>5000₺</td>
+          </tr>
+          <tr>
+            <td>SEO</td>
+            <td>3000₺</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="iletisim">
+      <h2>İletişim</h2>
+      <form action="#" method="post">
+        <label for="isim">İsim:</label><br />
+        <input type="text" id="isim" name="isim" /><br /><br />
+
+        <label for="email">E-posta:</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="mesaj">Mesaj:</label><br />
+        <textarea id="mesaj" name="mesaj" rows="4" cols="30"></textarea
+        ><br /><br />
+
+        <button type="submit">Gönder</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
