@@ -14,14 +14,11 @@ console.log(set.has(obj));
 
 console.log("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5555");
 
-
-for(let value of set){
+for (let value of set) {
   console.log(value);
-  
 }
 
 console.log("*********************************");
-
 
 const values = Array.from(set);
 
@@ -33,7 +30,6 @@ console.log(indexArr[0]);
 console.log(indexArr[1]);
 console.log(indexArr[2]);
 
-
 console.log("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
 
 let bilgiler = [
@@ -44,11 +40,6 @@ let bilgiler = [
   ["Galileo", "Telescope", 1564],
 ];
 
-
 const newSet = new Set(bilgiler);
 
 console.log(newSet);
-
-
-
-
