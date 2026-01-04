@@ -13,5 +13,25 @@ const players = [
   { username: "D", level: 19, banned: false },
 ];
 
-let 
+let playerSum = players.reduce((totalPlayers, player) => {
+  
+    totalPlayers++;
+  
+  return totalPlayers;
+}, 0);
 
+console.log(playerSum);
+let bannedCount = players.reduce((bannedCount, player) => {
+  if (player.banned) {
+    bannedCount++;
+  }
+  return bannedCount;
+}, 0);
+
+console.log(bannedCount);
+
+let avgLevel = players.reduce((levelSum, player) => {
+   levelSum += player.level/playerSum;
+  return levelSum;
+},0);
+console.log(avgLevel);
