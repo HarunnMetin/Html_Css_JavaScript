@@ -19,7 +19,7 @@ let noBnnedPlayer = players.reduce((find, player) => {
   if (player.banned === true) {
     return find;
   }
-  if (player.level >= 10) {
+  if (player.level <10) {
     return find;
   }
   if (find === null) {
