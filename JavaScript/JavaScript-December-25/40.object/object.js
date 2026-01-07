@@ -34,3 +34,19 @@ let stock = shop.products.reduce((acc, product) => {
 }, 0);
 
 console.log(`Stokta olan ürünlerin toplam: ${stock}`);
+
+//Stokta olmayan ürünün adını bul ve yazdır
+
+let nonStockProduct = shop.products.find((product) => {
+  if (product.inStock === false) {
+    console.log(`Stokta olmayan urun adi :${product.name}`);
+  }
+});
+
+//Stokta olan ürünlerin isimlerini bir array olarak çıkar
+
+let inStockProduct = shop.products
+  .filter((product) => product.inStock)
+  .map((product) => product.name);
+
+console.log(`Stokta olan urunlerin isimleri :${inStockProduct}`);
